@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
 <body>
+First name:<br>
+<input type="text" name="firstname" onKeyDown="cow('0')" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" onKeyDown="cow('counter1')" value="">
+<br><br>
+<button id = "abcd" type="button" onclick="count('counter1')">Submit</button>
 
-<form action="ga('send', 'event', 'form', 'filled', 'completed');">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
+
+
+<script>
+function count(counter1){
+if (counter1 < 2){
+
+alert('Error n');
+}
+}
+</script>
+
+<script>
+function cow(counter1){
+counter1 = counter1 + 1;
+}
+</script>
 
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
@@ -28,9 +42,11 @@
 
   ga('create', 'UA-105885720-1', 'auto');
   ga('send', 'pageview');
+  
+  document.getElementsById("abcd").addEvent
 
 </script>
-<button type="button" onclick="ga('send', 'event', 'buttons', 'clicker', 'now');">Click Me!</button> 
+<button id = "abcd" type="button" onclick="ga('send', 'event', 'buttons', 'clicker', 'now');">Click Me!</button> 
 
 
 </body>
