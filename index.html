@@ -19,10 +19,15 @@ Last name:<br>
 		// Obtain the object reference.
   		var Label = document.getElementById("llbb");
 
+  		console.log("plain string");
+
   		if (Label.value.length > 0)
   		{
-  			ga('send', 'event', 'buttons', 'clicker', 'now')
+  			console.log("not so plain string");
+  			ga('send', 'event', 'buttons', 'clicker', 'now');
   		}
+
+  		console.log("Say bye");
 
 	}
 
