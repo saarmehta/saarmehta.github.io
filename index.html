@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-First name:<br>
-<input id="llbb" type="text" name="firstname" onblur ="test" value="">
-<br>
-Last name:<br>
-<input id="bbll" type="text" name="lastname" onblur ="ga('send', 'event', 'buttons', 'clicker', 'now')" value="">
-<br>
-<br>
-<button id = "abcd" type="button" onclick="ga('send', 'event', 'buttons', 'clicker', 'now')">Submit</button>
-
-
+<head>
 <script type="text/javascript">
 	
 	function test(){
@@ -33,7 +23,21 @@ Last name:<br>
 
 
 
-</script>>
+</script>
+</head>
+
+<body>
+First name:<br>
+<input id="llbb" type="text" name="firstname" onblur ="test" value="">
+<br>
+Last name:<br>
+<input id="bbll" type="text" name="lastname" onblur ="ga('send', 'event', 'buttons', 'clicker', 'now')" value="">
+<br>
+<br>
+<button id = "abcd" type="button" onclick="ga('send', 'event', 'buttons', 'clicker', 'now')">Submit</button>
+
+
+
 
 
 
@@ -51,4 +55,5 @@ Last name:<br>
 
 
 </body>
+
 </html>
