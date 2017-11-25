@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 First name:<br>
-<input type="text" name="firstname" onKeyDown="cow('0')" value="Mickey">
+<input type="text" name="firstname" onblur="ga('send', 'event', 'buttons', 'clicker', 'now')" value="Mickey">
 <br>
 Last name:<br>
-<input type="text" name="lastname" onKeyDown="cow('counter1')" value="">
+<input type="text" name="lastname" onfocus="ga('send', 'event', 'buttons', 'clicker', 'now')" value="">
 <br><br>
-<button id = "abcd" type="button" onclick="count('counter1')">Submit</button>
-
-
-
-<script>
-function count(counter1){
-if (counter1 < 2){
-
-alert('Error n');
-}
-}
-</script>
-
-<script>
-function cow(counter1){
-counter1 = counter1 + 1;
-}
-</script>
+<button id = "abcd" type="button" onclick="ga('send', 'event', 'buttons', 'clicker', 'now')">Submit</button>
 
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
