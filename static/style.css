@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #007bff; /* Blue for professionalism */
+    --secondary-color: #6c757d; /* Gray for subtlety */
+    --background-color: #f8f9fa; /* Light background */
+    --text-color: #212529; /* Dark text for readability */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    background: var(--secondary-color);
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
