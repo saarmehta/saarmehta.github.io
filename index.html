@@ -1,59 +1,71 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<script type="text/javascript">
-	
-	function test(){
-
-		// Obtain the object reference.
-  		var Label = document.getElementById("llbb");
-
-  		console.log("plain string");
-
-  		if (Label.value.length > 0)
-  		{
-  			console.log("not so plain string");
-  			ga('send', 'event', 'buttons', 'clicker', 'now');
-  		}
-
-  		console.log("Say bye");
-
-	}
-
-
-
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saaransh Mehta - Data Science Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #212529; background-color:#f8f9fa; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        header { background: #007bff; color: #fff; padding: 20px 0; text-align: center; }
+        section { margin-bottom: 20px; }
+        h2 { color: #333; }
+        p { margin: 10px 0; }
+        .contact { background: #f4f4f4; padding: 20px; text-align: center; }
+        .footer {
+            background: #6c757d;
+            padding: 20px;
+        }      
+        a {
+            text-decoration: none;
+            color: #f8f9fa;
+        }
+    </style>
 </head>
-
 <body>
-First name:<br>
-<input id="llbb" type="text" name="firstname" onblur ="test()" value="">
-<br>
-Last name:<br>
-<input id="bbll" type="text" name="lastname" onblur ="ga('send', 'event', 'buttons', 'clicker', 'now')" value="">
-<br>
-<br>
-<button id = "abcd" type="button" onclick="ga('send', 'event', 'buttons', 'clicker', 'now')">Submit</button>
-<br>
+    <header>
+        <h1>Saaransh Mehta</h1>
+        <p>Data Scientist | Analytics Consultant | Instructor</p>
+    </header>
 
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I've worked in the data analytics industry for over eight years, providing business intelligence to Fortune 500 clients. With a passion for discovering latent insights, forecasting business trends, and automating data-driven decisions, I aim to create impactful insights for businesses.</p>
+            <p><strong>Skills</strong> - Technical skills (Python, SAS, SQL, etc.) and professional skills (problem-solving, stakeholder management, etc.)</p>
+        </section>
 
-<p> "Hello from the other site" </p>
+        <section id="experience">
+            <h2>Experience</h2>
+	    <p><strong>Instructor-Data Analytics Institute </strong> - Teaching with the intent to help migrants get data analytics jobs in the Australian market</p>
+            <p><strong>Instructor-Data Analytics Edx/Monash University</strong> - Teaching a boot camp on Data analytics and visualization covering a wide range of technologies and concepts.</p>
+            <p><strong>Analytics Consultant at Experian</strong> - Working on client projects to produce analytical-based and data-driven propositions. Working on credit risk mitigation strategies and recommendations for clients such as Big 4 banks, major telcos, utility companies, & government departments in Australia</p>
+            <p><strong>Risk Analyst at Openpay</strong> - Analyzing fraudulent transactions and recommending mitigation strategies, leading to significant cost savings .</p>
+            <p><strong>Previous Roles</strong> - Engagement Manager at Mu-Sigma, Digital Marketing Consultant at Directline Finance, and Associate Product Manager at Locusnine</p>
+        </section>
 
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>Weather Impact on Retail Sales</strong> - Quantifying the effect of weather on retail sales through data analysis and visualization.</p>
+            <p><strong>Fraud Mitigation and Anti-Money Laundering Systems</strong> - Designed and implemented a system for regulatory compliance and fraud prevention.</p>
+            <p><strong>Credit Modelling and Risk Stratergy</strong> - Building scorecards and credit risk mitigation strategies for Australian banks, telcos and utility companies.</p>
+        </section>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-105885720-1', 'auto');
-  ga('send', 'pageview');
-</script>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Master of Data Science, Monash University</strong> - Completed thesis on "Classification of high-resolution Landsat-8 times series by using lower resolution reference data".</p>
+            <p><strong>Ongoing MBA, The Power Business School</strong></p>
+        </section>
 
-
-<button id = "abcd" type="button" onclick="ga('send', 'event', 'buttons', 'clicker', 'now');">Click Me!</button> 
-
-
+        <div class="contact footer">
+            <h2>Contact Me</h2>
+            <p>Email: Saar.mehta@gmail.com | Phone: +61424199515</p>
+            <!-- Add links to LinkedIn, Podcast, and Blogs -->
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/saaransh-mehta-86202939">LinkedIn Profile</a></p>
+            <p>Podcast: <a href="https://open.spotify.com/show/4SoUMrLsbDbyRWxHMECoae">Podcast on Spotify</a></p>
+            <p>Blogs: <a href="https://medium.com/@saaranshmehta">Medium Blog</a></p>
+        </div>
+    </div>
 </body>
-
 </html>
