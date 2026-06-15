@@ -1,71 +1,175 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saaransh Mehta - Data Science Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #212529; background-color:#f8f9fa; }
-        .container { max-width: 1200px; margin: auto; padding: 20px; }
-        header { background: #007bff; color: #fff; padding: 20px 0; text-align: center; }
-        section { margin-bottom: 20px; }
-        h2 { color: #333; }
-        p { margin: 10px 0; }
-        .contact { background: #f4f4f4; padding: 20px; text-align: center; }
-        .footer {
-            background: #6c757d;
-            padding: 20px;
-        }      
-        a {
-            text-decoration: none;
-            color: #f8f9fa;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Vidhya's Godh Bharai Invitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: #fff7f2;
+      color: #4a2b1a;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .card {
+      max-width: 480px;
+      width: 100%;
+      margin: 24px;
+      padding: 24px 20px 28px;
+      background: #fffdf9;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 1px solid #f3d2a8;
+      box-sizing: border-box;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: #ffe3cf;
+      color: #8a4a1f;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 4px 0 4px;
+      color: #7b3b2a;
+      text-align: center;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 0 0 14px;
+      text-align: center;
+      color: #b26a3b;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #8a5a3a;
+      margin-bottom: 18px;
+    }
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #b26a3b;
+      margin-top: 18px;
+      margin-bottom: 6px;
+    }
+    .info-row {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .highlight {
+      color: #7b3b2a;
+      font-weight: 600;
+    }
+    .rsvp-box {
+      margin-top: 18px;
+      padding: 12px 12px 14px;
+      border-radius: 14px;
+      background: #e9f6f4;
+      border: 1px solid #b7ded7;
+      font-size: 14px;
+    }
+    .rsvp-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .btn {
+      flex: 1 1 120px;
+      text-align: center;
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.1s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #f6a36a, #f47f6b);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(244,127,107,0.35);
+    }
+    .btn-outline {
+      background: #fff;
+      color: #f47f6b;
+      border: 1px solid #f6a36a;
+    }
+    .btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+    }
+    .note {
+      margin-top: 22px;
+      font-size: 13px;
+      text-align: center;
+      color: #9a6a4a;
+      font-style: italic;
+    }
+    .footer-love {
+      margin-top: 10px;
+      font-size: 13px;
+      text-align: center;
+      color: #7b3b2a;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Saaransh Mehta</h1>
-        <p>Data Scientist | Analytics Consultant | Instructor</p>
-    </header>
+  <main class="card">
+    <div class="badge">You're invited</div>
+    <h1>Godh Bharai (Baby Shower)</h1>
+    <h2>for Vidhya</h2>
+    <p class="subtitle">
+      Join us to celebrate and bless the mother‑to‑be!
+    </p>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I've worked in the data analytics industry for over eight years, providing business intelligence to Fortune 500 clients. With a passion for discovering latent insights, forecasting business trends, and automating data-driven decisions, I aim to create impactful insights for businesses.</p>
-            <p><strong>Skills</strong> - Technical skills (Python, SAS, SQL, etc.) and professional skills (problem-solving, stakeholder management, etc.)</p>
-        </section>
+    <div class="section-title">Hosted by</div>
+    <div class="info-row"><span class="highlight">Vidhya &amp; Saaransh</span></div>
 
-        <section id="experience">
-            <h2>Experience</h2>
-	    <p><strong>Instructor-Data Analytics Institute </strong> - Teaching with the intent to help migrants get their first data analytics jobs in Australia</p>
-            <p><strong>Instructor-Data Analytics Edx/Monash University</strong> - Teaching a boot camp on Data analytics and visualization covering a wide range of technologies and concepts.</p>
-            <p><strong>Analytics Consultant at Experian</strong> - Working on client projects to produce analytical-based and data-driven propositions. Working on credit risk mitigation strategies and recommendations for clients such as Big 4 banks, major telcos, utility companies, & government departments in Australia</p>
-            <p><strong>Risk Analyst at Openpay</strong> - Analyzing fraudulent transactions and recommending mitigation strategies, leading to significant cost savings .</p>
-            <p><strong>Previous Roles</strong> - Engagement Manager at Mu-Sigma, Digital Marketing Consultant at Directline Finance, and Associate Product Manager at Locusnine</p>
-        </section>
+    <div class="section-title">Date &amp; time</div>
+    <div class="info-row"><span class="highlight">20th June 2026</span></div>
+    <div class="info-row">From <span class="highlight">1:00 p.m. onwards</span></div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p><strong>Weather Impact on Retail Sales</strong> - Quantifying the effect of weather on retail sales through data analysis and visualization.</p>
-            <p><strong>Fraud Mitigation and Anti-Money Laundering Systems</strong> - Designed and implemented a system for regulatory compliance and fraud prevention.</p>
-            <p><strong>Credit Modelling and Risk Stratergy</strong> - Building scorecards and credit risk mitigation strategies for Australian banks, telcos and utility companies.</p>
-        </section>
+    <div class="section-title">Venue</div>
+    <div class="info-row"><span class="highlight">66 Willslie Crescent</span></div>
+    <div class="info-row">Berwick VIC 3806</div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>Master of Data Science, Monash University</strong> - Completed thesis on "Classification of high-resolution Landsat-8 times series by using lower resolution reference data".</p>
-            <p><strong>Ongoing MBA, The Power Business School</strong></p>
-        </section>
-
-        <div class="contact footer">
-            <h2>Contact Me</h2>
-            <p>Email: Saar.mehta@gmail.com | Phone: +61424199515</p>
-            <!-- Add links to LinkedIn, Podcast, and Blogs -->
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/saaransh-mehta-86202939">LinkedIn Profile</a></p>
-            <p>Podcast: <a href="https://open.spotify.com/show/4SoUMrLsbDbyRWxHMECoae">Podcast on Spotify</a></p>
-            <p>Blogs: <a href="https://medium.com/@saaranshmehta">Medium Blog</a></p>
-        </div>
+    <div class="rsvp-box">
+      <div><strong>RSVP</strong> by <span class="highlight">11th June</span></div>
+      <div class="info-row">
+        Please RSVP to <a href="tel:+61424199515" class="highlight">0424&nbsp;199&nbsp;515</a>.
+      </div>
+      <div class="rsvp-actions">
+        <a
+          class="btn btn-primary"
+          href="mailto:vidhya@example.com?subject=RSVP%20-%20Vidhya%27s%20Godh%20Bharai%20on%2020th%20June&body=Hi%20Vidhya%20and%20Saaransh%2C%0D%0A%0D%0AWe%20would%20like%20to%20RSVP%20for%20the%20godh%20bharai%20on%2020th%20June%20at%201%3A00%20p.m.%20onwards.%0D%0A%0D%0ANames%3A%20%0D%0ANumber%20of%20guests%3A%20%0D%0A%0D%0ALooking%20forward%20to%20celebrating%20with%20you!">
+          RSVP by Email
+        </a>
+        <a class="btn btn-outline" href="tel:+61424199515">
+          Call / SMS RSVP
+        </a>
+      </div>
     </div>
+
+    <div class="note">
+      Dress comfortably and come with your blessings and smiles.
+    </div>
+    <div class="footer-love">
+      With love, Vidhya &amp; Saaransh
+    </div>
+  </main>
 </body>
 </html>
